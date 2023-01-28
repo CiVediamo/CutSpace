@@ -1,0 +1,31 @@
+.offer {
+	padding-top: 5.68em;
+}
+
+.offer__container {
+	max-width: 1398px;
+}
+
+.offer__row {
+	justify-content: unset;
+	gap: 8.43em;
+}
+
+.offer__carts {
+	display: flex;
+	margin-left: -80px;
+	gap: 32px;
+	position: relative;
+
+	img {
+		border-radius: 40px;
+	}
+}
+
+.offer__text {
+	max-width: 376px;
+
+	button {
+		margin-top: 2.6em;
+	}
+}

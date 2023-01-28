@@ -1,0 +1,38 @@
+.advantage {
+	text-align: center;
+}
+
+.statistic-box {
+	margin-top: 3.75em;
+	flex-basis: 260px;
+	position: relative;
+
+	&:hover {
+
+		img {
+			filter: saturate(0%) contrast(10);
+		}
+		.statictic-box__img::before {
+			background-color: $btn-color;
+		}
+	}
+
+
+	h3 {
+		font-size: 1.75rem;
+		margin-bottom: 2px;
+	}
+
+
+}
+
+.statictic-box__img::before {
+	position: absolute;
+	content: "";
+	width: 70px;
+	height: 70px;
+	border-radius: 100%;
+	left: 37%;
+    top: -10%;
+	background-color: rgba(88, 190, 191, 0.2);
+}

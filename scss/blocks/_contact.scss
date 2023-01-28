@@ -1,0 +1,60 @@
+.contact {
+	background: url("../img/main/contact/bg.svg") no-repeat;
+	background-size: cover;
+}
+
+.contact__container {
+	max-width: 1140px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.contact__info {
+	color: #FFFFFF;
+
+	h2 {
+		line-height: 1.48;
+	}
+}
+
+.contact__info {
+	flex-basis: 355px;
+
+	h2 {
+		margin-bottom: 1rem;
+	}
+	p {
+		max-width: 325px;
+		margin-bottom: 2rem;
+	}
+}
+
+.contact__button {
+		color: #000000;
+		background-color: #FFFFFF;
+
+		&:hover {
+			color: #FFFFFF;
+			background-color: #000000;
+		}
+}
+
+.contact__img {
+	position: relative;
+
+	&::before {
+		position: absolute;
+		content: "";
+		width: 743px;
+		height: 743px;
+		top: 0;
+		left: 0;
+		transform: translate(-25%, 25%);
+		background: url("../img/main/contact/oval.svg") no-repeat;
+	}
+
+	img {
+		display: block;
+		position: relative;
+	}
+}

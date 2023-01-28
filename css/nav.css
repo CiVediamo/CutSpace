@@ -1,0 +1,8 @@
+.header__list {
+  gap: 2.8em;
+}
+
+.header__list li:hover a {
+  color: orange;
+  font-weight: 700;
+}/*# sourceMappingURL=nav.css.map */

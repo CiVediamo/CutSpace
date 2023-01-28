@@ -1,0 +1,92 @@
+.thanks {
+	margin-top: 12em;
+
+	h2 {
+		flex-basis: 455px;
+	}
+	p {
+		color: #606060;
+		flex-basis: 400px;
+	}
+}
+
+.thanks__container {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 15px;
+	position: relative;
+
+	&::after {
+		position: absolute;
+		content: "";
+		width: 80px;
+		height: 80px;
+		top: -40px;
+		right: -40px;
+		background: url("../img/icons/logo.svg") no-repeat;
+		background-size: contain;
+		transform: rotate(-45deg);
+	}
+}
+
+.thanks__card_wrapper {
+	margin-top: 3.6em;
+	gap: 15px;
+	align-items: unset;
+}
+
+.thanks__card {
+	flex-basis: 350px;
+	box-shadow: 0px 10px 52px rgba(0, 0, 0, 0.08);
+
+	img {
+		object-fit: cover;
+    	object-position: center;
+		cursor: pointer;
+	}
+
+	&_text {
+		padding: 1.8em;
+
+		p {
+			color: #323232;
+			margin-top: 0;
+		}
+
+		h5 {
+			font-size: 1.1rem;
+			margin-bottom: 0;
+		}
+
+		span {
+			color: #58BEBF;
+		}
+	}
+
+	&:hover {
+		.thanks__card_text span {
+			color: $btn-color;
+		}
+		.thanks__card_img::before {
+			opacity: 1;
+		}
+	}
+
+}
+
+.thanks__card_img {
+	position: relative;
+	cursor: pointer;
+
+	&::before {
+		position: absolute;
+		content: "";
+		width: 50px;
+		height: 50px;
+		background: url("../img/icons/play-video.svg") no-repeat;
+		bottom: 20px;
+		right: 20px;
+		opacity: 0;
+	}
+
+}
